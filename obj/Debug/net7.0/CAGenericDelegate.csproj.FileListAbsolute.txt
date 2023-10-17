@@ -1,0 +1,14 @@
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\bin\Debug\net7.0\CAGenericDelegate.exe
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\bin\Debug\net7.0\CAGenericDelegate.deps.json
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\bin\Debug\net7.0\CAGenericDelegate.runtimeconfig.json
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\bin\Debug\net7.0\CAGenericDelegate.dll
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\bin\Debug\net7.0\CAGenericDelegate.pdb
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\CAGenericDelegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\CAGenericDelegate.AssemblyInfoInputs.cache
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\CAGenericDelegate.AssemblyInfo.cs
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\CAGenericDelegate.csproj.CoreCompileInputs.cache
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\CAGenericDelegate.dll
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\refint\CAGenericDelegate.dll
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\CAGenericDelegate.pdb
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\CAGenericDelegate.genruntimeconfig.cache
+C:\Users\ramis\Desktop\dr_atef_c#\dot_net_core\CAGenericDelegate\obj\Debug\net7.0\ref\CAGenericDelegate.dll
