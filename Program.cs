@@ -3,7 +3,7 @@
     //___________________________(3)___________________________
     //public delegate bool Filter(int n);
     //___________________________(4)___________________________
-    public delegate bool Filter<in T>(T n);
+    //public delegate bool Filter<in T>(T n);
     internal class Program
     {
         static void Main(string[] args)
@@ -37,19 +37,33 @@
             //Console.WriteLine("Even numbers: ");
             //PrintNumber(list1, n => n % 2 == 0);
 
-            //___________________________(4)___________________________
-            Console.WriteLine("Numbers less than 6: ");
-            PrintNumber(list1, n => n < 6);
+            //___________________________(4,5)___________________________
+            //Console.WriteLine("Numbers less than 6: ");
+            //PrintNumber(list1, n => n < 6);
+            //Console.WriteLine("\n\n");
+            //Console.WriteLine("Numbers less than 7: ");
+            //PrintNumber(list1, n => n < 7);
+            //Console.WriteLine("\n\n");
+            //Console.WriteLine("Even numbers: ");
+            //PrintNumber(list1, n => n % 2 == 0);
+
+            //IEnumerable<decimal> list2 = new decimal[] { 1.43m, 2.55m, 3.64m, 4.31m, 5.7m, 6.94m, 7.15m, 8.53m, 9.82m };
+            //Console.WriteLine("\n\nNumber greater than or equal 3.7: ");
+            //PrintNumber(list2, n => n >= 3.7m);
+
+            //___________________________(6)___________________________
+            
+            PrintNumber(list1, n => n < 6, () => Console.WriteLine("Numbers less than 6: "));
             Console.WriteLine("\n\n");
-            Console.WriteLine("Numbers less than 7: ");
-            PrintNumber(list1, n => n < 7);
+
+            PrintNumber(list1, n => n < 7, () => Console.WriteLine("Numbers less than 7: "));
             Console.WriteLine("\n\n");
-            Console.WriteLine("Even numbers: ");
-            PrintNumber(list1, n => n % 2 == 0);
+            
+            PrintNumber(list1, n => n % 2 == 0,() => Console.WriteLine("Even numbers: "));
 
             IEnumerable<decimal> list2 = new decimal[] { 1.43m, 2.55m, 3.64m, 4.31m, 5.7m, 6.94m, 7.15m, 8.53m, 9.82m };
-            Console.WriteLine("\n\nNumber greater than or equal 3.7: ");
-            PrintNumber(list2, n => n >= 3.7m);
+           
+            PrintNumber(list2, n => n >= 3.7m, ()=> Console.WriteLine("\n\nNumber greater than or equal 3.7: "));
 
             Console.ReadKey();
 
@@ -105,8 +119,36 @@
         //}
 
         //___________________________(4)___________________________
-        public static void PrintNumber<T>(IEnumerable<T> list, Filter<T> filter)
+        //public static void PrintNumber<T>(IEnumerable<T> list, Filter<T> filter)
+        //{
+        //    foreach (var n in list)
+        //    {
+        //        if (filter(n))
+        //        {
+        //            Console.Write($" {n}");
+
+        //        }
+        //    }
+        //}
+
+
+        //___________________________(5)___________________________
+        //public static void PrintNumber<T>(IEnumerable<T> list, Predicate<T> filter)
+        //{
+        //    foreach (var n in list)
+        //    {
+        //        if (filter(n))
+        //        {
+        //            Console.Write($" {n}");
+
+        //        }
+        //    }
+        //}
+
+        //___________________________(6)___________________________
+        public static void PrintNumber<T>(IEnumerable<T> list, Func<T, bool> filter, Action action)
         {
+            action();
             foreach (var n in list)
             {
                 if (filter(n))
